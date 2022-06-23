@@ -1,0 +1,15 @@
+.MultiBoxClose {
+	BEHAVIOR: url(iepngfix.htc)
+}
+.MultiBoxPrevious {
+	BEHAVIOR: url(iepngfix.htc)
+}
+.MultiBoxNext {
+	BEHAVIOR: url(iepngfix.htc)
+}
+.MultiBoxNextDisabled {
+	BEHAVIOR: url(iepngfix.htc)
+}
+.MultiBoxPreviousDisabled {
+	BEHAVIOR: url(iepngfix.htc)
+}

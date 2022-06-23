@@ -1,0 +1,125 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_cgebon7p" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="<%=Session["keywords"]%>,sion marketing, sion, marketing" />
+<meta name="description" content="SION - <%=Session["description"]%>" />
+<meta name="revisit-after" content="1 days" />
+<meta name="google-site-verification" content="F3dwWLa3XXxQUNdAnDARkfRPfeZYoinncWD9GMvQVFc" />
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="/images/favicon.ico" rel="shortcut icon" />
+<title><%=Common.ShowTitle() %></title>
+<style type="text/css">
+<!--
+@import url("<%=Common.UrlSite %>css/style.css");
+@import url("<%=Common.UrlSite %>css/chromestyle.css");
+-->
+</style>
+<script type="text/javascript" src="<%=Common.UrlSite %>js/jquery.min.js"></script>
+<script type="text/javascript" src="<%=Common.UrlSite %>js/animatedcollapse.js"></script>
+<script type="text/javascript" src="<%=Common.UrlSite %>js/chrome.js"></script>
+</head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20204141-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<body>
+<form id="form1" runat="server">
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+
+<div id="container">
+    	<div id="header">
+       	   <div id="LogoSlide">
+                <div class="Logo"><img src="<%=Common.UrlSite %>images/logo.jpg" /></div>
+               <div class="Flash_Khung"><img src="<%=Common.UrlSite %>images/<%=sPhamtran298 %>.jpg" /></div>
+           </div>
+           	<div id="Menu">
+           		<div class="sMenu" id="chromemenu">
+                	 <ul>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mh %>" title="<%=Resources.lang._mh %>"><span class="<%=sMenu("trang-chu", "home") %>"><%=Resources.lang._mh %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mab %>" title="<%=Resources.lang._mab %>" rel="dropmenu1"><span class="<%=sMenu("gioi-thieu", "about-us") %>"><%=Resources.lang._mab %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mse %>" title="<%=Resources.lang._mse %>" rel="dropmenu2"><span class="<%=sMenu("dich-vu", "services") %>"><%=Resources.lang._mse %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mpa %>" title="<%=Resources.lang._mpa %>"><span class="<%=sMenu("doi-tac-khach-hang", "partners") %>"><%=Resources.lang._mpa %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mho %>" title="<%=Resources.lang._mho %>"><span class="<%=sMenu("dat-phong-khach-san", "hotel-booking-online") %>"><%=Resources.lang._mho %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mre %>" title="<%=Resources.lang._mre %>"><span class="<%=sMenu("tuyen-dung", "recuitment") %>"><%=Resources.lang._mre.Replace("Recuitment", "Recruitment") %></span></a></li>
+                        <li><a href="<%=Common.UrlSite %><%=Resources.lang.mco %>" title="<%=Resources.lang._mco %>"><span class="<%=sMenu("lien-he", "contact-us") %>"><%=Resources.lang._mco %></span></a></li>
+                   </ul>
+                </div>
+                <div class="sBanner">
+                	<div class="sFlash">
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="607" height="245">
+                    <param name="movie" value="<%=Common.UrlSite %>images/banner.swf">
+                    <param name="quality" value="high">
+                    <param name="wmode" value="transparent">
+                    <embed src="<%=Common.UrlSite %>images/banner.swf" allowscriptaccess="sameDomain" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="607" height="245"></embed>
+                  </object></div>
+                </div>
+                <div class="sLang"><br />
+                	<a href="<%=Common.UrlSite %>english.html">English</a><span>|</span><a href="<%=Common.UrlSite %>vietnamese.html">Vietnamese</a>
+                </div>
+                
+            </div>
+      </div>
+<div style="clear:both"></div>
+         <div id="content">
+           <div class="bdLeft">
+           		<asp:Repeater ID="rpAds" runat="server">
+                    <ItemTemplate>
+                        <p style="padding-left:14px; padding-top:20px">
+                        <%# Common.ShowImg(Eval("Img"), "", Eval("Name"), 210, 0, "", "")%></p>
+                    </ItemTemplate>
+                </asp:Repeater>
+           </div>
+           <div class="bdRight">
+             <div style="padding:20px 10px 10px 10px; min-height:300px">
+                <asp:ContentPlaceHolder ID="_ct298" runat="server"></asp:ContentPlaceHolder>
+             </div>
+<!--1st drop down menu -->                                                   
+<div id="dropmenu1" class="dropmenudiv">
+<asp:Repeater ID="rpAboutUs" runat="server">
+<ItemTemplate>
+<a href="<%# Common.MakeLink(Eval("id_"), 5) %>"><%# Eval("Name") %></a>
+</ItemTemplate>
+</asp:Repeater>
+</div>
+ 
+ 
+<!--2nd drop down menu -->                                                
+<div id="dropmenu2" class="dropmenudiv">
+<asp:Repeater ID="rpServices" runat="server">
+<ItemTemplate>
+<a href="<%# Common.MakeLink(Eval("id_"), 5) %>"><%# Eval("Name") %></a>
+</ItemTemplate>
+</asp:Repeater>
+</div>
+ 
+<script type="text/javascript"> cssdropdown.startchrome("chromemenu") </script>
+           </div>
+         </div>
+           
+         <div id="footer">
+           <div class="bdfLeft"></div>
+           <div class="bdfRight">
+Head Office: 116/58 Street No.14A, Quarter 4, Tan Thuan Tay Ward District 7, Ho Chi Minh City, Vietnam<br />
+Tel: 84-8-38723 655, Fax: 84-8-38723 656<br />
+Email: sales@sionmarketing.com, Website: www.sionmarketing.com <br />
+</div>
+         </div>
+          
+         <div style="height:10px; width:1003px; clear:both"></div>
+         
+    </div>
+</form>
+</body>
+</html>

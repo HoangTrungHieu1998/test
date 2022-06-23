@@ -1,0 +1,326 @@
+﻿<%@ master language="C#" enableviewstate="true" inherits="Admin_MasdddterPage, App_Web__cpveq1m" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>..:: Administrator SION Marketing ::..</title>
+<script type="text/javascript" src="../js/EventCheckBoxes.js"></script>
+<meta name="google-site-verification" content="FRv77UhXWjXWrUa4WdcEAnPkJFo7DnprypJSCymK9R4" />
+<link href="Images/stypeAdmin.css" rel="stylesheet" type="text/css" />
+<LINK href="images/administrator.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+<!--
+.style3 {color: #FFFFFF}
+.style5 {
+color: #FFFFFF;
+font-size: 36px;
+font-weight: bold;
+font-style: italic;
+line-height:33px
+}
+-->
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<table align="center" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td><table width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#6691b4">
+<tr class="topbg">
+<td width="7" height="69" class="topLeft">&nbsp;</td>
+<td height="69"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="70" align="right"><img src="images/body.gif" width="48" height="44" /></td>
+<td width="40">&nbsp;</td>
+<td><span class="style5"><%=str_Language %></span> </td>
+
+</tr>
+</table></td>
+<td width="7" height="69" class="topRight">&nbsp;</td>
+</tr>
+<tr>
+<td class="leftbg">&nbsp;</td>
+<td class="headbgTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width=15">&nbsp;</td>
+<td><span class="style3">Chào mừng thành viên: <strong><%=str_User %></strong></span></td>
+<td align="right"> <a  style="color:Red" href="Language.aspx?sl=English" class="link_language_1">English</a> | 
+<a style="color:Red" href="Language.aspx?sl=Tiếng Việt" class="link_language_1">Việt Nam</a>
+</td><td width="20">&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="rightbg">&nbsp;</td>
+</tr>
+<tr>
+<td class="leftbg">&nbsp;</td>
+<td bgcolor="#FFFFFF">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="5">&nbsp;</td>
+<td width="180" class="headMenuLeft"><img src="images/newUser.gif" width="17" height="16" /> Quản trị Thành viên</td>
+<td width="4" bgcolor="#c3d9ff" class="bodyLeft">&nbsp;</td>
+<td class="bodybg">&nbsp;&nbsp;&nbsp; <%=(Request["tl"] + string.Empty).ToUpper().Replace("-"," ") %> </td>
+<td width="4" bgcolor="#c3d9ff" class="bodyRight"></td>
+<td width="5">&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td valign="top" width="200px">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="1" width="176px" bgcolor="#e0ecff" ></td>
+<td height="1" width="3px" align="right" bgcolor="#ffffff" ></td>
+</tr>
+<tr>
+<td height="23" colspan="2">
+<asp:HyperLink ID="HyperLink15" runat="server" CssClass="linkMenu" NavigateUrl="~/Administrator/AccountAdmin.aspx">Quản lý thành viên</asp:HyperLink>
+</td>
+</tr>
+<tr>
+<td height="23" colspan="2"><asp:HyperLink CssClass="linkMenu"  ID="HyperLink2" runat="server" NavigateUrl="~/Administrator/ChangePass.aspx">Thay đổi mật khẩu</asp:HyperLink></td>
+</tr>
+<tr>
+<td height="23" colspan="2"><asp:LinkButton CssClass="linkMenu" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Log Out</asp:LinkButton></td>
+</tr>
+<tr>
+<td height="1" width="176px" bgcolor="#e0ecff" ></td>
+<td height="1" width="3px" align="right" bgcolor="#ffffff" ></td>
+</tr>
+
+<tr>
+<td colspan="2" class="headMenuLeft" style="height:29px">
+<img src="images/newUser.gif" width="17" height="16"> Quản trị nội dung</td>
+</tr>
+<tr>
+<td height="1" width="176px" bgcolor="#e0ecff" ></td>
+<td height="1" width="3px" align="right" bgcolor="#ffffff" ></td>
+</tr>
+</table>
+
+<asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" ShowLines="True" LineImagesFolder="~/TreeLineImages">
+<Nodes>
+<asp:TreeNode Text="Trang chủ [Vietnamese]" Value="Menu">
+<asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=trang-chu" 
+Text="Nội dung trang chủ" Value="Cổ phiếu"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=trang-chu&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+</asp:TreeNode>
+    <asp:TreeNode 
+        Text="Giới thiệu" Value="Giới thiệu">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=gioi-thieu&amp;wP=140" 
+            Text="Giới thiệu" Value="Giới thiệu"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=gioi-thieu&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+<asp:TreeNode 
+        Text="Dịch vụ" Value="Dịch vụ">
+    <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=dich-vu&amp;wP=140" 
+        Text="Dịch vụ" Value="Dịch vụ"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=dich-vu&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+<asp:TreeNode 
+        Text="Đối tác khách hàng" Value="Đối tác khách hàng">
+    <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=doi-tac-khach-hang&amp;wP=140" 
+        Text="Đối tác khách hàng" Value="Đối tác khách hàng"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=doi-tac-khach-hang&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode Text="Đặt phòng khách sạn" Value="Đặt phòng khách sạn">
+        <asp:TreeNode Text="Đặt phòng khách sạn" Value="Đặt phòng khách sạn">
+            <asp:TreeNode NavigateUrl="~/Administrator/List-MM.aspx?tl=dat-phong-khach-san" 
+                Text="Danh sách Quốc Gia" Value="Danh sách Quốc Gia"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-SM.aspx?tl=dat-phong-khach-san" 
+                Text="Danh sách Tỉnh Thành" Value="Danh sách Tỉnh Thành"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-SSM.aspx?tl=dat-phong-khach-san" 
+                Text="Danh sách khách sạn" Value="Danh sách khách sạn"></asp:TreeNode>
+            <asp:TreeNode Text="Danh sách phòng khách sạn" 
+                Value="Danh sách phòng khách sạn" 
+                NavigateUrl="~/Administrator/List-DM-SSSM.aspx?tl=dat-phong-khach-san"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=gia-phong" 
+                Text="Giá phòng" Value="Giá phòng"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=loai-card" 
+                Text="Loại Card" Value="Loại Card"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MMListBooking.aspx" 
+                Text="Danh sách đặt phòng" Value="Room Control"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=dat-phong-khach-san&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode 
+        Text="Tuyển dụng" Value="Tuyển dụng">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=tuyen-dung" 
+            Text="Tuyển dụng" Value="Tuyển dụng"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=tuyen-dung&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode Text="Liên hệ" Value="Liên hệ">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=lien-he" 
+            Text="Địa chỉ liên hệ" Value="Địa chỉ liên hệ"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=email-lien-he" 
+            Text="Danh sách eMail" Value="Danh sách eMail"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=lien-he&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+   
+<asp:TreeNode 
+        Text="Gửi Email khách hàng" Value="Gửi Email khách hàng">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-MM.aspx?tl=email-khach-hang" 
+            Text="Group eMail" Value="Group eMail"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-SM.aspx?tl=email-khach-hang" 
+            Text="Gửi Email" Value="Gửi Email"></asp:TreeNode>
+    </asp:TreeNode>
+
+</Nodes>
+<ParentNodeStyle Font-Bold="False" />
+<HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+<SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+VerticalPadding="0px" />
+<NodeStyle Font-Names="Verdana" Font-Size="8pt" HorizontalPadding="5px"
+NodeSpacing="0px" VerticalPadding="0px" />
+</asp:TreeView>
+
+
+<asp:TreeView ID="TreeView2" runat="server" Visible="false" ImageSet="Arrows" ShowLines="True" LineImagesFolder="~/TreeLineImages">
+<Nodes>
+<asp:TreeNode Text="Trang chủ [English]" Value="Menu">
+<asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=home" 
+Text="Nội dung trang chủ" Value="Cổ phiếu"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=home&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+</asp:TreeNode>
+    <asp:TreeNode 
+        Text="Giới thiệu" Value="Giới thiệu">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=about-us&amp;wP=140" 
+            Text="Giới thiệu" Value="Giới thiệu"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=about-us&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+<asp:TreeNode 
+        Text="Dịch vụ" Value="Dịch vụ">
+    <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=services&amp;wP=140" 
+        Text="Dịch vụ" Value="Dịch vụ"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=services&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+<asp:TreeNode 
+        Text="Đối tác khách hàng" Value="Đối tác khách hàng">
+    <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=partners&amp;wP=140" 
+        Text="Đối tác khách hàng" Value="Đối tác khách hàng"></asp:TreeNode>
+    <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=partners&amp;wP=210" 
+        Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode Text="Đặt phòng khách sạn" Value="Đặt phòng khách sạn">
+        <asp:TreeNode Text="Đặt phòng khách sạn" Value="Đặt phòng khách sạn">
+            <asp:TreeNode NavigateUrl="~/Administrator/List-MM.aspx?tl=hotel-booking-online" 
+                Text="Danh sách Quốc Gia" Value="Danh sách Quốc Gia"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-SM.aspx?tl=hotel-booking-online" 
+                Text="Danh sách Tỉnh Thành" Value="Danh sách Tỉnh Thành"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-SSM.aspx?tl=hotel-booking-online" 
+                Text="Danh sách khách sạn" Value="Danh sách khách sạn"></asp:TreeNode>
+            <asp:TreeNode Text="Danh sách phòng khách sạn" 
+                Value="Danh sách phòng khách sạn" 
+                NavigateUrl="~/Administrator/List-DM-SSSM.aspx?tl=hotel-booking-online"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=rating" 
+                Text="Giá phòng" Value="Giá phòng"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=card-type" 
+                Text="Loại Card" Value="Loại Card"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MMListBooking.aspx" 
+                Text="Danh sách đặt phòng" Value="Room Control"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=hotel-booking-online&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode 
+        Text="Tuyển dụng" Value="Tuyển dụng">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=recuitment" 
+            Text="Tuyển dụng" Value="Tuyển dụng"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=recuitment&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+    <asp:TreeNode Text="Liên hệ" Value="Liên hệ">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-oMM.aspx?tl=contact-us" 
+            Text="Địa chỉ liên hệ" Value="Địa chỉ liên hệ"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-MM.aspx?tl=email-contacts" 
+            Text="Danh sách eMail" Value="Danh sách eMail"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-aDM-MM.aspx?tl=contact-us&amp;wP=210" 
+            Text="Hình đối tác" Value="Hình đối tác"></asp:TreeNode>
+    </asp:TreeNode>
+   
+<asp:TreeNode 
+        Text="Gửi Email khách hàng" Value="Gửi Email khách hàng">
+        <asp:TreeNode NavigateUrl="~/Administrator/List-MM.aspx?tl=email-customer" 
+            Text="Group eMail" Value="Group eMail"></asp:TreeNode>
+        <asp:TreeNode NavigateUrl="~/Administrator/List-DM-SM.aspx?tl=email-customer" 
+            Text="Gửi Email" Value="Gửi Email"></asp:TreeNode>
+    </asp:TreeNode>
+
+</Nodes>
+<ParentNodeStyle Font-Bold="False" />
+<HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+<SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+VerticalPadding="0px" />
+<NodeStyle Font-Names="Verdana" Font-Size="8pt" HorizontalPadding="5px"
+NodeSpacing="0px" VerticalPadding="0px" />
+</asp:TreeView>
+
+
+
+
+</td>
+<td bgcolor="#c3d9ff">&nbsp;</td>
+<td align="left" valign="top" style="padding:0px 7px 7px 7px">
+
+<p style="width:100%">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</p>
+
+
+</td>
+<td bgcolor="#c3d9ff"></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td class="bodybottomleft"></td>
+<td class="bodybottombg"></td>
+<td class="bodybottomright">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+
+</td>
+<td class="rightbg">&nbsp;</td>
+</tr>
+<tr>
+<td height="52" class="bottomLeft">&nbsp;</td>
+<td height="52" align="center" class="bottombg style3">
+
+<table style="width: 100%; padding-top:10px">
+<tr>
+<td align="left">
+<span style="color: white">Hỗ trợ kỹ thuật: <a href="ymsgr:sendIM?phamtran298"><img alt="Q Tuấn: 090 8988959" src="http://opi.yahoo.com/online?u=phamtran298&&m=g&t=1" border="0"></a>
+<br />
+Điện thoại: 0908 988 959</span></td>
+<td style="text-align: right">
+<span style="color: #ffffff">
+<span class="copyright"><span>Copyright © 2010 phamtran298@gmail.com
+- All right reserved<br />
+</span><span>Designed by</span></span> </span><a class="linkvn" href="#">
+<span style="color: #ffffff; text-decoration: underline">PHAMTRAN298</span></a></td>
+</tr>
+</table>
+</td>
+<td height="52" class="bottomRight">&nbsp;</td>
+</tr>
+
+</table></td></tr>             
+</table>
+</form>
+</body>
+</html>

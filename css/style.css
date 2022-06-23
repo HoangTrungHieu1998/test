@@ -1,0 +1,34 @@
+body{ margin:0; padding:0; font-family:Tahoma, Arial; font-size:12px; color:#333; background:#fdc352 url(../images/bgbody.png) repeat-x top;}
+h1, h2, h3, h4, h5, h6, p, ul{ margin:0; padding:0;}
+a{ color:#00309c; text-decoration:none; outline:none;}
+a:hover{ text-decoration:underline;}
+
+#container{ width:1003px; margin:0 auto; padding-bottom:20px}
+
+#container #header{ width:1003px; padding-top:50px;}
+#container #header #LogoSlide{ width:1003px; }
+#container #header #LogoSlide .Logo{ width:482px; height:195px; float:left; position:absolute }
+#container #header #LogoSlide .Flash_Khung{ width:521px; height:313px; float:right; }
+#container #header #Menu{ position:absolute; top:245px}
+#container #header #Menu .sMenu{ float:left; width:196px;}
+#container #header #Menu .sMenu ul{ list-style-type:disc; padding-top:20px }
+#container #header #Menu .sMenu ul li{ list-style:none outside none; height:33px; }
+#container #header #Menu .sMenu a{ color:#fff; font-size:13px; font-weight:bold; text-decoration:none; }
+#container #header #Menu .sMenu a:hover{ color:#ff0000; font-size:13px; font-weight:bold; text-decoration:none; }
+#container #header #Menu .sBanner{ float:left; width:626px; height:258px; background: url(../images/sBanner.png) repeat-x bottom; }
+#container #header #Menu .sBanner .sFlash{ padding-left:8px; padding-top:2px }
+#container #header #Menu .sLang{ float:left; width:161px; height:123px; padding-top:133px; padding-left:20px; padding-bottom:2px; background: url(../images/bgLang.jpg) repeat-x bottom;}
+#container #header #Menu .sLang a{ color:#fdb934; font-weight:bold; text-decoration:none; }
+#container #header #Menu .sLang a:hover{ color:#ff0000; font-weight:bold; text-decoration:none; }
+#container #header #Menu .sLang span{ color:#fdb934; padding:0px 5px 0px 5px; font-weight:bold;}
+
+#container #content { padding-top:137px; width:1003px; }
+#container #content .bdLeft{ width:240px; float:left; }
+#container #content .bdRight{ width:746px; float:right; background-image:url(../images/bgbodyRight.png); margin-top:-8px; padding:8px }
+
+#container #footer .bdfLeft{ width:240px; height:auto; float:left; }
+#container #footer .bdfRight{ width:762px; font-size:11px; text-align:center; padding-top:6px; color:#FFFFFF;  height:53px; float:right; background-image:url(../images/bgfooter.png); }
+
+.Menu{
+ COLOR: #FF0000; 
+}

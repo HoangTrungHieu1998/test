@@ -1,0 +1,39 @@
+.MultiBoxContainer {
+	BORDER-RIGHT: #000 20px solid; BORDER-TOP: #000 20px solid; DISPLAY: none; Z-INDEX: 2; BORDER-LEFT: #000 20px solid; BORDER-BOTTOM: #000 20px solid; POSITION: absolute; BACKGROUND-COLOR: #fff
+}
+.MultiBoxLoading {
+	BACKGROUND: url(/images/loading.gif) no-repeat center 50%
+}
+.MultiBoxContent {
+	OVERFLOW: hidden; WIDTH: 100%; POSITION: relative; HEIGHT: 100%
+}
+.MultiBoxClose {
+	RIGHT: -26px; BACKGROUND: url(/images/close.png) no-repeat; WIDTH: 24px; CURSOR: pointer; POSITION: absolute; TOP: -26px; HEIGHT: 24px
+}
+.MultiBoxControlsContainer {
+	OVERFLOW: hidden; POSITION: relative; HEIGHT: 0px
+}
+.MultiBoxControls {
+	WIDTH: 100%; POSITION: relative; HEIGHT: auto; BACKGROUND-COLOR: #000000
+}
+.MultiBoxPrevious {
+	MARGIN-TOP: 5px; BACKGROUND: url(/images/left.png) no-repeat; LEFT: 0px; WIDTH: 24px; CURSOR: pointer; POSITION: absolute; HEIGHT: 24px
+}
+.MultiBoxNext {
+	MARGIN-TOP: 5px; RIGHT: 0px; BACKGROUND: url(/images/right.png) no-repeat; WIDTH: 24px; CURSOR: pointer; POSITION: absolute; HEIGHT: 24px
+}
+.MultiBoxNextDisabled {
+	BACKGROUND: url(/images/rightDisabled.png) no-repeat; CURSOR: default
+}
+.MultiBoxPreviousDisabled {
+	BACKGROUND: url(/images/leftDisabled.png) no-repeat; CURSOR: default
+}
+.MultiBoxTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; MARGIN: 10px 0px 0px 35px; COLOR: #fff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; POSITION: relative; TEXT-ALIGN: left
+}
+.MultiBoxNumber {
+	FONT-SIZE: 11px; FLOAT: right; MARGIN: 10px 35px 0px 0px; WIDTH: 50px; COLOR: #fff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; POSITION: relative; TEXT-ALIGN: right
+}
+.MultiBoxDescription {
+	CLEAR: left; FONT-SIZE: 11px; MARGIN: 0px 35px; COLOR: #fff; PADDING-TOP: 5px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; POSITION: relative; TEXT-ALIGN: left
+}

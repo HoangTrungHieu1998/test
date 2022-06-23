@@ -1,0 +1,140 @@
+body{
+	background: #eaeaea; 
+	font-family: Arial, Helvetica, sans-serif;
+	height:100%;
+	width:100%; 
+	font-size: 12px;
+	max-height:100%;
+	max-width:100%;
+	margin:0px 0px 0px 0px; 
+	padding::0px 0px 0px 0px; 
+	color: #10304b;
+}
+input table tr td 
+{
+	color:#10304b;
+}
+A:link {
+	FONT-SIZE: 12px; 	COLOR: #000000; 	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif; 	TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; 	COLOR: #000000;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; 	COLOR: #b70000;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+
+A.linkMenu:link {
+	FONT-SIZE: 12px; 	COLOR: #144268;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkMenu:active {
+	FONT-SIZE: 12px;	COLOR: #144268;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkMenu:visited {
+	FONT-SIZE: 12px;	COLOR: #144268;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkMenu:hover {
+	FONT-SIZE: 12px; 	COLOR: #ff0000;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: underline;
+}
+
+A.linkEstore:link {
+	FONT-SIZE: 12px; 	COLOR: #ffffff;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkEstore:active {
+	FONT-SIZE: 12px;	COLOR: #ffffff;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkEstore:visited {
+	FONT-SIZE: 12px;	COLOR: #ffffff;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: none
+}
+A.linkEstore:hover {
+	FONT-SIZE: 12px; 	COLOR: #ff0000;	    FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;     TEXT-DECORATION: underline;
+}
+
+
+
+.topbg {
+	background-image:url(topbg.gif);  height:39px; 
+}
+.topLeft {
+	background-image:url(topLeft.gif);  width:7px; background-repeat:no-repeat;
+}
+.topRight {
+	background-image:url(topRight.gif);  width:7px; background-repeat:no-repeat;
+}
+.leftbg {
+	background-image:url(leftbg.gif);  width:7px; 
+}
+.rightbg {
+	background-image:url(rightbg.gif);  width:7px;
+}
+.bodyRight {
+	background-image:url(bodyRight.gif);  width:6px; 
+}
+/* Bottom */
+.bottomLeft {
+	background-image:url(bottomLeft.gif); height:52px; width:7px; background-repeat:no-repeat;
+}
+.bottombg {
+	background-image:url(bottombg.gif); height:52px;
+}
+.bottomRight {
+	background-image:url(bottomRight.gif); height:52px; width:7px; background-repeat:no-repeat;
+}
+
+.headbgTop {
+	background-image:url(headbgTop.gif);  height:32px; 
+}
+
+.bodyLeft {
+	background-image:url(bodyLeft.gif); height:31px; width:4px; background-repeat:no-repeat;
+}
+.bodyRight {
+	background-image:url(bodyRight.gif); height:31px; width:4px; background-repeat:no-repeat;
+}
+.bodybg {
+	background-image:url(bodybg.gif); height:31px; FONT-SIZE: 13px;	COLOR: #447fb0;	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;    font-weight: bold; 
+}
+.bodybottomleft {
+	background-image:url(bodybottomleft.gif); height:11px; width:4px; background-repeat:no-repeat;
+}
+.bodybottomright {
+	background-image:url(bodybottomright.gif); height:11px; width:4px; background-repeat:no-repeat;
+}
+.bodybottombg {
+	background-image:url(bodybottombg.gif); height:11px;
+}
+
+.headMenuLeft {
+	FONT-SIZE: 17px;	COLOR: #447fb0;	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;    font-weight: bold; 
+}
+.headMenu {
+	FONT-SIZE: 12px;	COLOR: #447fb0;	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;    font-weight: bold; 
+}
+
+
+.txtHeader
+{
+	font: 11px Arial, Helvetica, sans-serifTahoma;
+	color: #303030;
+	background-color:#f9f9fa;
+	border: #CCCCCC 1px solid;
+	padding: 1px 1px 1px 1px;
+	height: 17px;
+}
+.head {
+	FONT-SIZE: 13px;	COLOR: #cccccc;	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif;    font-weight: bold; 
+
+}
+
+.txtTop {
+	FONT-SIZE: 11px; padding: 1px 1px 1px 1px;
+	height:14px;
+    border: #e9a423 1px solid;	background-color: #cf6467;
+	COLOR: #FFFFFF;	FONT-FAMILY: Arial, Tahoma, Verdana, Helvetica, sans-serif; 
+}
+
+.border_product{
+    padding: 5px 5px 5px 5px;
+    border: #e9a423 1px solid;
+	background-color: #FFFFFF;
+}

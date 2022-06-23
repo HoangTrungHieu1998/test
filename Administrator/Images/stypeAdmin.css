@@ -1,0 +1,335 @@
+body 
+{
+	background-color:#ffffff;
+	font-family: "arial", "tahoma", "verdana";
+	color:Black;
+	font-size:12px;
+	line-height: 21px;
+	margin:0px 0px 0px 0px;
+}
+table 
+{
+	font-size:12px;
+	line-height:14px;
+}
+
+a:link {
+	color: Black;
+	text-decoration:none;
+}
+a:visited {
+	color:#666666;
+	text-decoration:none;
+}
+a:hover {
+	color:#CC0000;
+	text-decoration:none;
+}
+a:active {
+	color:#666666;
+	text-decoration:none;
+}
+.header
+{
+	background-color: #4877cf;	
+	height: 50px;
+	
+}
+.textHeaderBig
+{
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	font-weight: bold;
+	font-size: 30px;	
+	padding-bottom: 10px;
+	padding-top: 10px;	
+}
+.textHeaderSmall
+{
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: Yellow;
+	font-weight: bold;
+	font-size: 12px;	
+	padding-right: 5px;	
+}
+.header1
+{
+	background-color: #6699ff;	
+}
+.footer
+{
+	background-color: #4877cf;
+	height: 40px;	
+}
+.copyright{
+   font-family: tahoma;
+	font-size: 10px;	
+	vertical-align: top;
+	color: #E2E2E2;
+	padding-top: 8px;
+	padding-bottom: 22px;
+}
+.weblink{
+   font-family: tahoma;
+	font-size: 10px;	
+	vertical-align: top;
+	color: Yellow;
+	padding-top: 8px;
+	padding-bottom: 22px;
+}
+.weblink:hover{
+   font-family: tahoma;
+	font-size: 10px;	
+	vertical-align: top;
+	color: White;
+	padding-top: 8px;
+	padding-bottom: 22px;
+}
+.borderLeft
+{	
+	border-bottom: #b1cbfe 0px solid;
+	border-left:  #b1cbfe 0px solid;
+	border-right:  #b1cbfe 1px solid;
+	border-top:  #b1cbfe 0px solid;
+}
+.TDTop
+{	
+	display: block;
+}
+.leftMenuParent
+{
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: White;
+	font-weight: bold;
+	font-size: 12px;		
+	background-color: #6b8dd5;
+	text-indent: 2px;
+	height: 24px;
+}
+.leftBgImage
+{	
+	background-color: #6b8dd5;	
+	text-align: center;	
+}
+
+.leftMenuSub
+{
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	font-weight: normal;
+	font-size: 12px;
+	text-indent: 20px;
+	height: 22px;	
+}
+.textCenterBig
+{
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color:  Navy;
+	font-weight: bold;
+	font-size: 25px;	
+	line-height: 30px;
+}
+
+.buttonMg54 {	
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 8pt; 
+	BORDER-LEFT: #0057ae 1px solid; 
+	BORDER-RIGHT: #0057ae 1px solid; 
+	BORDER-TOP: #0057ae 1px solid; 
+	BORDER-BOTTOM: #0057ae 1px solid;
+	COLOR: white; 	 
+	FONT-FAMILY: Arial, Helvetica; 
+	BACKGROUND-COLOR: #6b8dd5;
+	height: 22px; 
+	width: 60px;
+	margin-top: 3px;
+	margin-right: 54px;
+}
+.button {	
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 8pt; 
+	BORDER-LEFT: #0057ae 1px solid; 
+	BORDER-RIGHT: #0057ae 1px solid; 
+	BORDER-TOP: #0057ae 1px solid; 
+	BORDER-BOTTOM: #0057ae 1px solid;
+	COLOR: white; 	 
+	FONT-FAMILY: Arial, Helvetica; 
+	BACKGROUND-COLOR: #6b8dd5;
+	height: 22px; 
+	
+	margin-top: 3px;
+	margin-right: 3px;
+}
+.buttonMg20 {	
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 8pt; 
+	BORDER-LEFT: #1E1E1E 1px solid; 
+	BORDER-RIGHT: #1E1E1E 1px solid; 
+	BORDER-TOP: #1E1E1E 1px solid; 
+	BORDER-BOTTOM: #1E1E1E 1px solid;
+	COLOR: white; 	 
+	FONT-FAMILY: Arial, Helvetica; 
+	BACKGROUND-COLOR: #650303;
+	height: 22px; 
+	width: 60px;
+	margin-top: 4px;
+	margin-right: 27px;
+}
+.buttonIndent5 {	
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 8pt; 
+	BORDER-LEFT: #0057ae 1px solid; 
+	BORDER-RIGHT: #0057ae 1px solid; 
+	BORDER-TOP: #0057ae 1px solid; 
+	BORDER-BOTTOM: #0057ae 1px solid;
+	COLOR: white; 	 
+	FONT-FAMILY: Arial, Helvetica; 
+	BACKGROUND-COLOR: #6b8dd5;
+	height: 22px; 
+	width: 60px;
+	margin-top: 3px;
+	margin-right: 3px;
+	text-indent: 5px;
+}
+
+.styleTextbox
+{
+	font-size:9pt;
+	color:#000;
+	font-weight:normal;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION:none;
+	border:1px solid #9F9F9F; 
+	height:22px;
+	width: 300px;
+	background-color: #F5F5F5;
+	text-indent: 5px;
+}
+
+.textbox800x40
+{
+	font-size:9pt;
+	color:#000;
+	font-weight:normal;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION:none;
+	border:1px solid #9F9F9F; 
+	height:40px;	
+	background-color: #F5F5F5;
+	text-indent: 5px;
+}
+.textbox800x100
+{
+	font-size:9pt;
+	color:#000;
+	font-weight:normal;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION:none;
+	border:1px solid #9F9F9F; 
+	height:100px;	
+	background-color: #F5F5F5;
+	text-indent: 5px;
+}
+.styDrop200
+{
+	font-size:12px;
+	color: #000;
+	font-weight:normal;
+	font-family:Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION:none;
+	border:1px solid #F5F5F5; 
+	height:auto;
+	width: 200px;
+	background-color: #F5F5F5;
+	border-bottom: #F5F5F5;
+	border-bottom-width: thin;
+	border-left: #F5F5F5;
+	border-left-width: thin;
+	border-right: #F5F5F5;
+	border-right-width: thin;
+	border-top: #F5F5F5;
+	border-top-width:thin;	
+	text-indent: 5px;
+}
+.styDrop50
+{
+	font-size:12px;
+	color: #000;
+	font-weight:normal;
+	font-family:Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	TEXT-DECORATION:none;
+	border:1px solid #F5F5F5; 
+	height:auto;
+	width: 50px;
+	background-color: #F5F5F5;
+	border-bottom: #F5F5F5;
+	border-bottom-width: thin;
+	border-left: #F5F5F5;
+	border-left-width: thin;
+	border-right: #F5F5F5;
+	border-right-width: thin;
+	border-top: #F5F5F5;
+	border-top-width:thin;	
+	text-indent: 3px;
+}
+.textTittle
+{
+	font-size:12px;
+	line-height:14px;
+	font-weight:normal;
+	color:#FFFFFF;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+.borderImages {
+	BORDER-RIGHT: #424242 1px solid; 
+	BORDER-TOP: #424242 1px solid; 
+	BORDER-LEFT: #424242 1px solid; 
+	BORDER-BOTTOM: #424242 1px solid
+}
+.borderImagesMgTop {
+	BORDER-RIGHT: #424242 1px solid; 
+	BORDER-TOP: #424242 1px solid; 
+	BORDER-LEFT: #424242 1px solid; 
+	BORDER-BOTTOM: #424242 1px solid;
+	margin-top: 3px;
+	
+}
+.borderTable {
+	BORDER-RIGHT: #424242 0px solid; 
+	BORDER-TOP: #424242 0px solid; 
+	BORDER-LEFT: #424242 2px solid; 
+	BORDER-BOTTOM: #424242 0px solid
+}
+.space
+{
+	padding-left: 5px;
+}
+.textUpdating
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: Red;
+	text-indent: 20px;
+	
+}
+.tieu_de_big {
+	FONT-SIZE: 18px; COLOR: #006633; FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; TEXT-DECORATION: none;FONT-WEIGHT: bold;
+}
+.tieu_de {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; TEXT-DECORATION: none;FONT-WEIGHT: bold;
+}
+.tieu_de_tt {
+	FONT-SIZE: 12px; COLOR: #0000cd; FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; TEXT-DECORATION: none;FONT-WEIGHT: bold;
+}
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}

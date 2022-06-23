@@ -1,0 +1,111 @@
+BODY {
+	MARGIN-TOP: 0px; SCROLLBAR-FACE-COLOR: #f0f8ff; FONT-SIZE: 11px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; MARGIN-LEFT: 0px; SCROLLBAR-SHADOW-COLOR: #f0f8ff; SCROLLBAR-3DLIGHT-COLOR: #0099cc; MARGIN-RIGHT: 0px; SCROLLBAR-ARROW-COLOR: #237dc3; SCROLLBAR-TRACK-COLOR: #f0f8ff; FONT-FAMILY: Tahoma,Verdana, Arial, Helvetica, sans-serif; SCROLLBAR-DARKSHADOW-COLOR: #0099cc; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: justify; TEXT-DECORATION: none; argin-bottom: 0px COLOR: #000000
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #666666; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+SELECT {
+	FONT: 8pt tahoma,verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif
+}
+.Atitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif
+}
+A {
+	FONT-SIZE: 11px; COLOR: #0099cc; FONT-FAMILY: Tahoma,Verdana,Arial; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 11px; COLOR: #008000; FONT-FAMILY: Tahoma,Verdana,Arial; TEXT-DECORATION: none
+}
+INPUT {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+.inbox {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #000000; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial; BACKGROUND-COLOR: #feffff
+}
+.input_button_edit {
+	BORDER-RIGHT: #009999 2px solid; BORDER-TOP: #009999 2px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #009999 2px solid; COLOR: #ffffff; BORDER-BOTTOM: #009999 2px solid; FONT-FAMILY: Tahoma,Verdana,Arial; BACKGROUND-COLOR: #0099cc
+}
+.input_button_edit1 {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #6699cc 1px solid; COLOR: #000000; BORDER-BOTTOM: #6699cc 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial; BACKGROUND-COLOR: #eff5ff
+}
+.bdr {
+	BORDER-RIGHT: #0099cc 1px solid
+}
+.bdr1 {
+	BORDER-RIGHT: #ffffff 1px solid
+}
+.note {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.noteheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.note_err {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0099cc; FONT-STYLE: italic; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.note_light {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.inboxnavi {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #c0c0c0 1px solid; COLOR: #000000; BORDER-BOTTOM: #c0c0c0 1px solid; FONT-FAMILY: Tahoma,Verdana,Arial
+}
+.classheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.classtd_header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: bold 11px Arial; COLOR: #ffffff; PADDING-TOP: 0px; BACKGROUND-COLOR: #0099cc
+}
+.classtable_header {
+	BORDER-RIGHT: #0099cc 1px solid; BORDER-TOP: #0099cc 1px solid; BORDER-LEFT: #0099cc 1px solid; BORDER-BOTTOM: #0099cc 1px solid; BACKGROUND-COLOR: #add8e6
+}
+.classtrbg {
+	BACKGROUND-COLOR: #add8e6
+}
+.classtable_edit {
+	BORDER-RIGHT: #0099cc 1px solid; BORDER-TOP: #0099cc 1px solid; BORDER-LEFT: #0099cc 1px solid; BORDER-BOTTOM: #0099cc 1px solid; BACKGROUND-COLOR: #f0f8ff
+}
+.classtable_left {
+	BACKGROUND-COLOR: #0099aa
+}
+.classtd_row {
+	BACKGROUND-COLOR: #009999
+}
+.classtd_rowb {
+	BACKGROUND-COLOR: #ffffff
+}
+.classtd_rowd {
+	BACKGROUND-COLOR: #cbe2e9
+}
+.classtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+.topheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+A.toplogout:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0000ff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.toplogout:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0000ff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.toplogout:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #0000ff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.toplogout:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ff0000; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.leftlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif
+}
+A.leftlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.leftlink:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.leftlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0099cc; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.leftlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ff0000; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
